@@ -14,8 +14,6 @@ echo "helloo world"
 echo "tomcat developer1"
 
 echo "hello python"
-<<<<<<< HEAD
 echo "devops"
 
-=======
->>>>>>> 416bfce4af41f5c2869fdb37a061717e0f466f58
+
