@@ -5,4 +5,9 @@ cd /opt/;wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomc
 tar -xvzf apache-tomcat-10.0.16.tar.gz
 mv apache-tomcat-10.0.16.tar.gz tomcat
 sh tomcat/bin/startup.sh
+<<<<<<< HEAD
 echo "this is from developer2"
+=======
+
+echo "tomcat developer1"
+>>>>>>> dbf57bb1faec3c99246ef3de2c6d49898f68f314
