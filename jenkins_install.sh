@@ -7,6 +7,7 @@ amazon-linux-extras install java-openjdk11 -y
 amazon-linux-extras install epel -y
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum install jenkins -y
+hostnamectl set-hostname jenkins
 systemctl enable jenkins
 systemctl start jenkins
 

@@ -1,23 +1,15 @@
 #!/bin/bash
-yum update -y
-amazon-linux-extras install java-openjdk11 -y
-cd /opt/;wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.16/bin/apache-tomcat-10.0.16.tar.gz
-tar -xvzf apache-tomcat-10.0.16.tar.gz
-mv apache-tomcat-10.0.16.tar.gz tomcat
-sh tomcat/bin/startup.sh
-echo "this is from developer2"
+# install the java
+sudo amazon-linux-extras epel 
+sudo amazon-linux-extras install java-openjdk11 -y
+# install the tomcat
+cd /opt/
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.58/bin/apache-tomcat-9.0.58-windows-x64.zip
+# extract 
+sudo unzip apache-tomcat-9.0.58-windows-x64.zip
+# delete the zip
+sudo rm -f apache-tomcat-9.0.58-windows-x64.zip
+sudo mv apache-tomcat* tomcat
+sudo chmod -R 755 /opt/tomcat/
+sudo sh /opt/tomcat/bin/startup.sh 
 
-echo "tomcat developer1"
-echo "helloo world"
-
-
-echo "tomcat developer1"
-
-echo "hello python"
-<<<<<<< HEAD
-echo "hello python1"
-=======
-echo "devops"
-
-
->>>>>>> 34e24bfb123d3925390af1ba52444d79a92740d9
